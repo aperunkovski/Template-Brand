@@ -1581,4 +1581,134 @@ a {
   .modal-content h2 {
     font-size: 38px;
   }
+}
+/* =========================================================
+   NAKO PRELOADER
+   ========================================================= */
+.preloader {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  background: #11110f;
+  color: #f4f4ef;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1), opacity 0.4s ease;
+}
+
+.preloader-inner {
+  width: min(90%, 1100px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preloader-brand {
+  font-family: "Archivo", Arial, sans-serif;
+  font-size: clamp(80px, 16vw, 220px);
+  font-weight: 900;
+  letter-spacing: -0.09em;
+  line-height: 0.8;
+  text-align: center;
+  transform: scale(0.94);
+  animation: nakoBrandIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.preloader-brand span {
+  font-size: 0.15em;
+  vertical-align: top;
+  position: relative;
+  top: -0.25em;
+  letter-spacing: -0.05em;
+}
+
+/* =====================================================
+   BOTTOM LOADING
+   ===================================================== */
+.preloader-bottom {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 45px;
+}
+
+.preloader-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Archivo", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.preloader-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(244, 244, 239, 0.25);
+  position: relative;
+}
+
+#loaderProgress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 0%;
+  background: #f4f4ef;
+}
+
+.loader-arrow {
+  position: absolute;
+  top: -9px;
+  left: 0%;
+  font-size: 17px;
+  line-height: 1;
+  transform: translateX(-50%);
+  transition: left 0.08s linear;
+}
+
+/* =====================================================
+   EXIT
+   ===================================================== */
+.preloader.loaded {
+  transform: translateY(-100%);
+}
+
+/* =====================================================
+   ANIMATION
+   ===================================================== */
+@keyframes nakoBrandIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    letter-spacing: -0.03em;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    letter-spacing: -0.09em;
+  }
+}
+/* =====================================================
+   MOBILE
+   ===================================================== */
+@media (max-width: 650px) {
+  .preloader-inner {
+    width: 88%;
+  }
+  .preloader-brand {
+    font-size: clamp(72px, 22vw, 120px);
+  }
+  .preloader-bottom {
+    left: 6%;
+    right: 6%;
+    bottom: 30px;
+  }
 }/*# sourceMappingURL=syles.css.map */

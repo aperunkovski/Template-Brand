@@ -916,3 +916,77 @@ document
 
     }
   );
+
+
+
+
+
+
+
+
+
+
+
+  /* =========================================================
+   NAKO PRELOADER
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const preloader = document.getElementById("preloader");
+  const progress = document.getElementById("loaderProgress");
+  const percent = document.getElementById("loaderPercent");
+  const arrow = document.querySelector(".loader-arrow");
+
+  if (!preloader) return;
+
+  let value = 0;
+
+  const duration = 2400;
+  const start = performance.now();
+
+  function loading(now) {
+
+    const elapsed = now - start;
+
+    let progressValue = Math.min(
+      elapsed / duration,
+      1
+    );
+
+    /*
+      Smooth loading curve
+    */
+
+    progressValue =
+      1 - Math.pow(1 - progressValue, 2.2);
+
+    value = Math.floor(progressValue * 100);
+
+    progress.style.width = `${value}%`;
+    arrow.style.left = `${value}%`;
+    percent.textContent = `${value}%`;
+
+    if (progressValue < 1) {
+
+      requestAnimationFrame(loading);
+
+    } else {
+
+      setTimeout(() => {
+
+        preloader.classList.add("loaded");
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 900);
+
+      }, 150);
+
+    }
+
+  }
+
+  requestAnimationFrame(loading);
+
+});
