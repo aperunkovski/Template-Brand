@@ -125,12 +125,13 @@ a {
 
   width: max-content;
 
-  animation: marquee 26s linear infinite;
+  animation: marquee 20s linear infinite;
 
   font-family: $font-display;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .04em;
+  
 
   i {
     width: 1px;
