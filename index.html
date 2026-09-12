@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NAKO — modern streetwear for everyday movement.">
+  <title>NAKO — Modern Streetwear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/syles.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    <div class="marquee">
+      <span>BUILT FOR DAILY MOVEMENT</span>
+      <i></i>
+      <span>LIMITED RUNS · NO RESTOCKS</span>
+      <i></i>
+      <span>MODERN STREET ESSENTIALS</span>
+      <i></i>
+      <span>DESIGNED IN THE CITY</span>
+      <i></i>
+
+      <span>BUILT FOR DAILY MOVEMENT</span>
+      <i></i>
+      <span>LIMITED RUNS · NO RESTOCKS</span>
+      <i></i>
+      <span>MODERN STREET ESSENTIALS</span>
+      <i></i>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a href="#home" class="brand">
+      <span>NAKO</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home">HOME</a>
+      <a href="#catalog">CATALOG</a>
+      <a href="#story">ABOUT</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-btn" id="cartButton">
+        <span class="bag-icon"></span>
+        <em id="cartCount">0</em>
+      </button>
+
+      <button class="menu-btn" id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <aside class="mobile-menu" id="mobileMenu">
+
+    <button class="close-menu" id="closeMenu">×</button>
+
+    <a href="#home">HOME</a>
+    <a href="#catalog">CATALOG</a>
+    <a href="#story">ABOUT</a>
+    <a href="#newsletter">CONTACT</a>
+
+  </aside>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-shape hero-shape-a"></div>
+      <div class="hero-shape hero-shape-b"></div>
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">NAKO / 026</p>
+
+        <h1>
+          UNIFORM<br>
+          <span>FOR THE</span><br>
+          UNEXPECTED.
+        </h1>
+
+        <p class="hero-text">
+          Utility-led streetwear with a sharper point of view.
+          Built for movement, made to be worn your way.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a class="btn btn-outline" href="#story">
+            EXPLORE STORY
+          </a>
+
+          <a class="btn btn-solid" href="#catalog">
+            SHOP NOW <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="hero-image hero-image-back">
+          <img
+            src="/img/hero1.png"
+            alt="Streetwear model">
+        </div>
+
+        <div class="hero-image hero-image-main">
+
+          <img
+            src="/img/hero2.png"
+            alt="Fashion model">
+
+          <div class="image-tag">
+            DROP<br>
+            01 / 026
+          </div>
+
+        </div>
+
+        <div class="hero-stamp">
+          N<br>A<br>K<br>O<br>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURED -->
+    <section class="featured section-pad" id="catalog">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">SELECTED PIECES</p>
+          <h2>FEATURED</h2>
+        </div>
+
+        <button class="text-link" id="seeAll">
+          SEE MORE <span>↗</span>
+        </button>
+
+      </div>
+
+      <div class="product-grid" id="featuredGrid"></div>
+
+    </section>
+
+
+    <!-- CATALOG -->
+    <section class="catalog-list section-pad">
+
+      <div class="section-heading compact">
+
+        <div>
+          <p class="eyebrow">SHOP THE SYSTEM</p>
+          <h2>CATALOG</h2>
+        </div>
+
+      </div>
+
+
+      <div class="category-row" data-category="new">
+        NEW ARRIVALS
+        <span>↗</span>
+      </div>
+
+      <div class="category-row" data-category="tops">
+        TOPS
+        <span>↗</span>
+      </div>
+
+      <div class="category-row" data-category="outerwear">
+        OUTERWEAR
+        <span>↗</span>
+      </div>
+
+      <div class="category-row" data-category="bottoms">
+        BOTTOMS
+        <span>↗</span>
+      </div>
+
+      <div class="category-row" data-category="accessories">
+        ACCESSORIES
+        <span>↗</span>
+      </div>
+
+    </section>
+
+
+    <!-- CAMPAIGN -->
+    <section class="campaign section-pad">
+
+      <div class="campaign-video">
+
+        <img
+          src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1800&q=85"
+          alt="Urban fashion campaign">
+
+        <div class="video-overlay">
+
+          <button class="play-btn" id="playCampaign">
+            ▶
+          </button>
+
+          <p>NAKO / CITY STUDY 01</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORY -->
+    <section class="story section-pad" id="story">
+
+      <div class="story-card">
+
+        <img
+          src="/img/zakacalka.png"
+          alt="Streetwear garments">
+
+        <div class="story-note">
+
+          <span>01 — OBJECT</span>
+
+          <strong>
+            LESS NOISE.<br>
+            MORE INTENT.
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="story-copy">
+
+        <p class="eyebrow">OUR APPROACH</p>
+
+        <h2>
+          CLOTHES FOR<br>
+          THE <span>IN-BETWEEN.</span>
+        </h2>
+
+        <p>
+          NAKO sits between street, utility and everyday uniform.
+          We build considered silhouettes, hard-wearing fabrics and
+          small details that reward a closer look.
+        </p>
+
+        <a class="btn btn-dark" href="#newsletter">
+          READ THE STORY <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- TILES -->
+    <section class="tiles section-pad">
+
+      <div class="tile-grid">
+
+        <article class="tile">
+
+          <img
+            src="/img/newarrivals.png"
+            alt="New arrivals">
+
+          <div>
+            <span>NEW ARRIVALS</span>
+            <a href="#catalog">SHOP <b>↗</b></a>
+          </div>
+
+        </article>
+
+
+        <article class="tile">
+
+          <img
+            src="/img/coreessentials.png"
+            alt="Essentials">
+
+          <div>
+            <span>CORE ESSENTIALS</span>
+            <a href="#catalog">SHOP <b>↗</b></a>
+          </div>
+
+        </article>
+
+
+        <article class="tile">
+
+          <img
+            src="/img/collection.png"
+            alt="Collection">
+
+          <div>
+            <span>THE COLLECTION</span>
+            <a href="#catalog">SHOP <b>↗</b></a>
+          </div>
+
+        </article>
+
+
+        <article class="tile">
+
+          <img
+            src="/img/look.png"
+            alt="Last chance">
+
+          <div>
+            <span>LAST CHANCE</span>
+            <a href="#catalog">SHOP <b>↗</b></a>
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="store-photo">
+
+        <img
+          src="/img/banner.png"
+          alt="Fashion store">
+
+        <div class="store-copy">
+
+          <p>NAKO STUDIO</p>
+
+          <strong>
+            THE CITY<br>
+            IS OUR STORE.
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta section-pad" id="newsletter">
+
+      <img
+        src="/img/newstler.png"
+        alt="NAKO campaign">
+
+      <div class="cta-overlay">
+
+        <p class="eyebrow">NEXT DROP / 14.09</p>
+
+        <h2>
+          READY FOR<br>
+          THE NEXT<br>
+          <span>MOVE?</span>
+        </h2>
+
+        <p>
+          Join the list for early access, studio notes and
+          limited releases.
+        </p>
+
+        <form id="newsletterForm">
+
+          <input
+            type="email"
+            id="email"
+            placeholder="YOUR EMAIL ADDRESS"
+            required>
+
+          <button type="submit">
+            JOIN <span>↗</span>
+          </button>
+
+        </form>
+
+        <small id="formMessage"></small>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-brand">
+
+      <a class="brand brand-light" href="#home">
+        <span>NAKO</span>
+        <b>//</b>
+      </a>
+
+      <p>
+        Modern streetwear for movement,
+        individuality and the everyday.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <div>
+        <span>SHOP</span>
+        <a href="#catalog">Catalog</a>
+        <a href="#catalog">New arrivals</a>
+        <a href="#catalog">Essentials</a>
+      </div>
+
+      <div>
+        <span>INFO</span>
+        <a href="#story">About</a>
+        <a href="#newsletter">Contact</a>
+        <a href="#newsletter">Journal</a>
+      </div>
+
+      <div>
+        <span>SOCIAL</span>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Pinterest</a>
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 NAKO STUDIO</span>
+
+      <span>
+        BUILT FOR THE UNEXPECTED.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal" id="productModal">
+
+    <div class="modal-backdrop" data-close="modal"></div>
+
+    <div class="product-modal">
+
+      <button class="modal-close" data-close="modal">
+        ×
+      </button>
+
+      <div class="modal-image">
+
+        <img id="modalImage" src="" alt="">
+
+      </div>
+
+
+      <div class="modal-info">
+
+        <p class="eyebrow" id="modalCategory"></p>
+
+        <h2 id="modalName"></h2>
+
+        <p class="modal-price" id="modalPrice"></p>
+
+        <p class="modal-description" id="modalDescription"></p>
+
+
+        <div class="size-title">
+          SELECT SIZE
+        </div>
+
+        <div class="sizes" id="sizes"></div>
+
+
+        <button class="add-btn" id="addToCart">
+          ADD TO CART
+          <span>+</span>
+        </button>
+
+
+        <div class="product-meta">
+
+          <span>FREE SHIPPING OVER €120</span>
+
+          <span>30 DAY RETURNS</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CART -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-head">
+
+      <span>YOUR BAG</span>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+
+      <div class="empty-cart">
+        Your bag is empty.
+        <br>
+        <span>
+          Find something worth keeping.
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div>
+        <span>SUBTOTAL</span>
+        <strong id="cartTotal">€0</strong>
+      </div>
+
+      <button class="checkout" id="checkoutButton">
+        CHECKOUT
+        <span>↗</span>
+      </button>
+
+      <small>
+        Taxes and shipping calculated at checkout.
+      </small>
+
+    </div>
+
+  </aside>
+
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <div class="toast" id="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
