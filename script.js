@@ -4,7 +4,7 @@ const products = [
     name: "NAKO CORE HOODIE",
     category: "tops",
     price: 29.99,
-    image: "/img/maskizelenduks.png",
+    image: "img/maskizelenduks.png",
     badge: "NEW",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -16,7 +16,7 @@ const products = [
     name: "BACKPRINT TEE",
     category: "outwear",
     price: 19.99,
-    image: "/img/maskamajcacrna.png",
+    image: "img/maskamajcacrna.png",
     badge: "CORE",
     sizes: ["S", "M", "L", "XL"],
     description:
@@ -28,7 +28,7 @@ const products = [
     name: "ESSENTIAL TEE",
     category: "tops",
     price: 24.99,
-    image: "/img/maskamajcabe;a.jpeg",
+    image: "img/maskamajcabe;a.jpeg",
     badge: "DROP 01",
     sizes: ["OS"],
     description:
@@ -40,7 +40,7 @@ const products = [
     name: "ARCHIVE LOGO HOODIE",
     category: "outwear",
     price: 39.99,
-    image: "/img/maskidukssiv.png",
+    image: "img/maskidukssiv.png",
     badge: "LIMITED",
     sizes: ["S", "M", "L", "XL"],
     description:
@@ -52,7 +52,7 @@ const products = [
     name: "WIDE CARGO SET",
     category: "outerwear",
     price: 79.99,
-    image: "/img/zenskipantolonikrem.png",
+    image: "img/zenskipantolonikrem.png",
     badge: "NEW",
     sizes: ["S", "M", "L", "XL"],
     description:
@@ -64,7 +64,7 @@ const products = [
     name: "CITY TEE",
     category: "tops",
     price: 14.99,
-    image: "/img/zenskamajcabela.png",
+    image: "img/zenskamajcabela.png",
     badge: "CORE",
     sizes: ["S", "M", "L", "XL"],
     description:
@@ -76,7 +76,7 @@ const products = [
     name: "UTILITY CARGO SHORTS",
     category: "bottoms",
     price: 27.99,
-    image: "/img/maski shorc cremav.png",
+    image: "img/maski shorc cremav.png",
     badge: "RESTOCKED",
     sizes: ["OS"],
     description:
@@ -88,7 +88,7 @@ const products = [
     name: "TACTICAL CARGO PANTS",
     category: "bottoms",
     price: 49.99,
-    image: "/img/maskicrnipantalni.png",
+    image: "img/maskicrnipantalni.png",
     badge: "LIMITED",
     sizes: ["S", "M", "L", "XL"],
     description:
